@@ -34,7 +34,7 @@ client = commands.Bot(command_prefix='p.',
 client.remove_command("help")
 
 # TODO change mode to 1 or 2 here
-mode = 1
+mode = 2
 
 # TODO 
 # sendall is set to 0 by default, change to 1 if you want
@@ -43,12 +43,12 @@ sendall = 0
 
 # TODO 
 # replace the 0 with the pins channel ID for your sever
-pins_channel = 0
+pins_channel = 833327793017978900
 
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
 # a good idea is to add admin channels to this
-blacklisted_channels = []
+blacklisted_channels = [829043409095360562, 705409505625899080, 950558681114759268, 700796949061697678, 700900299631493120, 700900405298724894, 700900504946868276, 796808713460776962, 701082052946034708, 703966808302157885, 703076238964817980, 700900573519806535, 786281834006052875, 700860638104125451]
 
 # discord embed colors
 EMBED_COLORS = [
@@ -209,7 +209,7 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
 
 # TODO Replace TOKEN with the token from discord developer portal 
-client.run('TOKEN')
+client.run('MTAwMzQxNDU0NzA2OTE1MzM0MA.GZHThh.sJP-bUFEeIaJQp3qrTcVWDJoymE-FGsOWTpXEc')
 
 # TODO If using GitHub diff deployment on HeroKu comment out the above line with '#' and remove '#' from the line below to uncomment it. 
 #client.run(os.environ.get('TOKEN'))
